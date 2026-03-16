@@ -7,19 +7,20 @@ import {
 import { motion } from "framer-motion";
 
 const faqs = [
-  { q: "Preciso ter experiência prévia?", a: "Não. A imersão foi desenhada para atender desde iniciantes completos até profissionais que querem aprimorar suas técnicas." },
-  { q: "Essa imersão é para iniciantes?", a: "Sim! O conteúdo parte do zero e avança progressivamente. Você terá toda a base necessária para começar a atuar profissionalmente." },
-  { q: "Vou ter prática durante o evento?", a: "Com certeza. A prática real é um dos pilares da imersão. Você vai executar instalações com materiais profissionais e receber correções ao vivo." },
-  { q: "O que vou aprender nos 3 dias?", a: "Fundamentos, preparação de superfícies, técnicas de aplicação, alinhamento, acabamento, correção de erros, postura profissional e visão de mercado." },
-  { q: "Esse mercado realmente vale a pena?", a: "Sim. O mercado de instalação profissional de papel de parede está em crescimento, com alta demanda, poucos profissionais qualificados e excelente ticket médio." },
-  { q: "O evento é presencial?", a: "Sim, 100% presencial. Acreditamos que a prática ao vivo e a correção em tempo real são fundamentais para um aprendizado completo." },
-  { q: "Como faço minha inscrição?", a: "Clique no botão 'Garantir minha vaga' e você será direcionado para falar com nossa equipe e finalizar sua inscrição." },
-  { q: "As vagas são limitadas?", a: "Sim. Para garantir a qualidade do aprendizado e atenção individual, trabalhamos com turmas reduzidas." },
+  { q: "Preciso ter experiência para começar?", a: "Não. O treinamento foi desenhado para levar qualquer pessoa do zero ao nível profissional. Você não precisa de experiência prévia." },
+  { q: "Essa imersão é para iniciantes?", a: "Sim! Iniciantes são muito bem-vindos. O conteúdo parte do básico e avança progressivamente. Se você já tem alguma experiência, vai aprimorar sua técnica e aprender a precificar e vender seu serviço." },
+  { q: "Quanto um instalador profissional pode cobrar?", a: "Um instalador qualificado pode cobrar entre R$ 500 e R$ 3.000+ por projeto, dependendo do tipo de papel e complexidade. Profissionais com boa agenda faturam R$ 5.000 a R$ 15.000 por mês." },
+  { q: "Quais ferramentas vou precisar?", a: "Ensinamos tudo sobre as ferramentas no treinamento. O kit inicial é acessível e você pode começar com um investimento baixo em materiais." },
+  { q: "Em quanto tempo posso começar a trabalhar?", a: "Muitos alunos fecham seus primeiros clientes ainda na primeira semana após a imersão. Você sai pronto para atuar." },
+  { q: "O curso ensina só técnica ou também como conseguir clientes?", a: "Os dois. Além da parte técnica completa, ensinamos estratégias práticas para conseguir seus primeiros clientes, precificar corretamente e se posicionar no mercado." },
+  { q: "O evento é presencial?", a: "Sim, 100% presencial. A prática ao vivo e a correção em tempo real são essenciais para um aprendizado completo e acelerado." },
+  { q: "As vagas são limitadas?", a: "Sim. Para garantir qualidade e atenção individual, as turmas são reduzidas. Recomendamos inscrição antecipada." },
+  { q: "Tem garantia?", a: "Sim! Oferecemos garantia de 7 dias. Se não for para você, devolvemos 100% do valor sem burocracia." },
 ];
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="section-padding bg-secondary">
+    <section id="faq" className="section-padding">
       <div className="container-landing max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -29,11 +30,11 @@ const FAQSection = () => {
           className="text-center mb-16"
         >
           <span className="text-gold font-display font-bold text-sm tracking-widest uppercase mb-4 block">
-            Dúvidas
+            Dúvidas Frequentes
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold leading-tight">
-            Perguntas{" "}
-            <span className="text-gold-gradient">frequentes</span>
+            Tire suas{" "}
+            <span className="text-gold-gradient">dúvidas</span>
           </h2>
         </motion.div>
 
