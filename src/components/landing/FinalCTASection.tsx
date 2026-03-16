@@ -13,21 +13,21 @@ const FinalCTASection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold leading-tight mb-6">
-            Você pode continuar adiando ou pode{" "}
-            <span className="text-gold-gradient">dar o primeiro passo</span>
+            Você pode continuar adiando — ou pode{" "}
+            <span className="text-gold-gradient">começar um negócio lucrativo agora</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Aprenda uma habilidade valorizada e transforme isso em profissão, renda e
-            oportunidade. Sua nova carreira pode começar em 3 dias.
+            Enquanto você pensa, outros estão se formando, fechando clientes e faturando.
+            Sua nova profissão pode começar em 3 dias.
           </p>
 
           <a
-            href="https://wa.me/5511999999999?text=Quero%20garantir%20minha%20vaga%20na%20Profiss%C3%A3o%20ProWall"
+            href="https://wa.me/5511999999999?text=Quero%20come%C3%A7ar%20o%20treinamento%20ProWall"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 bg-gold-gradient hover:bg-gold-gradient-hover text-primary-foreground font-display font-bold text-lg px-10 py-5 rounded-xl shadow-gold transition-all duration-300 hover:shadow-gold-lg hover:scale-[1.02] animate-pulse-gold"
           >
-            Garanta sua vaga na Profissão ProWall
+            Começar o Treinamento ProWall
             <ArrowRight className="w-5 h-5" />
           </a>
         </motion.div>
