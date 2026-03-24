@@ -1,4 +1,5 @@
 import HeroSection from "@/components/landing/HeroSection";
+import VSLSection from "@/components/landing/VSLSection";
 import MarketOpportunitySection from "@/components/landing/MarketOpportunitySection";
 import WhatIsSection from "@/components/landing/WhatIsSection";
 import TransformationSection from "@/components/landing/TransformationSection";
@@ -18,6 +19,7 @@ const Index = () => {
   return (
     <main className="overflow-hidden">
       <HeroSection />
+      <VSLSection />
       <MarketOpportunitySection />
       <WhatIsSection />
       <TransformationSection />
