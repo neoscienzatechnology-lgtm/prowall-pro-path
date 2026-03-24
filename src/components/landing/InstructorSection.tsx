@@ -44,7 +44,7 @@ const InstructorSection = () => {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               O método ProWall foi criado por um profissional que construiu sua carreira instalando
-              papéis de parede para clientes de alto padrão — designers de interiores, arquitetos
+              papéis de parede para clientes de alto padrão designers de interiores, arquitetos
               e construtoras renomadas. Não é teoria: é experiência real transformada em método.
             </p>
 
