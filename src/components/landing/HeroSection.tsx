@@ -62,7 +62,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 mb-14"
+            className="flex flex-col sm:flex-row gap-4 mb-10"
           >
             <a
               href="https://wa.me/5511999999999?text=Quero%20come%C3%A7ar%20o%20treinamento%20ProWall"
@@ -79,7 +79,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.75 }}
-            className="flex flex-wrap gap-6"
+            className="flex flex-wrap gap-6 mb-12"
           >
             {[
               { icon: Award, text: "Profissão Lucrativa" },
@@ -91,6 +91,28 @@ const HeroSection = () => {
                 <span className="text-sm font-medium">{text}</span>
               </div>
             ))}
+          </motion.div>
+
+          {/* Video de Apresentação do Curso */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="w-full max-w-3xl"
+          >
+            <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
+              {/* Substitua o conteúdo abaixo pelo embed do vídeo de apresentação */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-background/80">
+                <div className="w-20 h-20 rounded-full bg-gold-gradient flex items-center justify-center shadow-gold cursor-pointer hover:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 text-primary-foreground ml-1">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+                <span className="text-muted-foreground font-display font-semibold text-sm tracking-wide uppercase">
+                  Vídeo de Apresentação do Curso
+                </span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
