@@ -17,7 +17,7 @@ import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-x-hidden w-full max-w-full">
       <HeroSection />
       <VSLSection />
       <MarketOpportunitySection />
