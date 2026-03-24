@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { TrendingUp, Target, Users, Zap, Crown, BarChart3, ArrowRight } from "lucide-react";
 
 const reasons = [
-  { icon: TrendingUp, title: "Mercado em Explosão", desc: "A procura por instalação profissional cresce todo ano. Quem se posiciona agora, sai na frente." },
+  { icon: TrendingUp, title: "Mercado em Expansão", desc: "A procura por instalação profissional cresce todo ano. Quem se posiciona agora, sai na frente." },
   { icon: Crown, title: "Clientes de Alto Padrão", desc: "Atenda designers, arquitetos e clientes que pagam bem por um serviço impecável." },
   { icon: Users, title: "Poucos Profissionais Qualificados", desc: "A maioria dos instaladores não tem formação. Quem tem, domina o mercado." },
   { icon: Zap, title: "Retorno Rápido do Investimento", desc: "É possível recuperar o valor do treinamento nos primeiros trabalhos." },
