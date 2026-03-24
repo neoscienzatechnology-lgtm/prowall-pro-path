@@ -25,7 +25,7 @@ const MarketOpportunitySection = () => {
             O Problema é a Oportunidade
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold leading-tight max-w-4xl mx-auto">
-            Faltam profissionais qualificados — e{" "}
+            Faltam profissionais qualificados e{" "}
             <span className="text-gold-gradient">sobra demanda para quem domina</span>
           </h2>
           <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
