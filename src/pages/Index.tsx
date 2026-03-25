@@ -4,9 +4,11 @@ import MarketOpportunitySection from "@/components/landing/MarketOpportunitySect
 import WhatIsSection from "@/components/landing/WhatIsSection";
 import TransformationSection from "@/components/landing/TransformationSection";
 import MethodSection from "@/components/landing/MethodSection";
+import VideoTestimonialsSection from "@/components/landing/VideoTestimonialsSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import InstructorSection from "@/components/landing/InstructorSection";
 import ForWhoSection from "@/components/landing/ForWhoSection";
+import PricingSection from "@/components/landing/PricingSection";
 import OfferSection from "@/components/landing/OfferSection";
 import GuaranteeSection from "@/components/landing/GuaranteeSection";
 import FAQSection from "@/components/landing/FAQSection";
@@ -24,9 +26,11 @@ const Index = () => {
       <WhatIsSection />
       <TransformationSection />
       <MethodSection />
+      <VideoTestimonialsSection />
       <TestimonialsSection />
       <InstructorSection />
       <ForWhoSection />
+      <PricingSection />
       <OfferSection />
       <GuaranteeSection />
       <StorySection />

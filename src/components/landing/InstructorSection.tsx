@@ -23,7 +23,7 @@ const InstructorSection = () => {
           >
             <img
               src={photo3}
-              alt="Instrutor ProWall - Especialista em instalação de papel de parede"
+              alt="Carlos Eduardo Pereira — Idealizador do Método ProWall"
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
@@ -39,13 +39,18 @@ const InstructorSection = () => {
               Sobre o Instrutor
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold leading-tight mb-6">
-              Aprenda com quem{" "}
-              <span className="text-gold-gradient">vive do mercado</span>
+              Conheça Carlos Eduardo Pereira,{" "}
+              <span className="text-gold-gradient">o idealizador do método</span>
             </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              Carlos Eduardo Pereira passou mais de uma década instalando papéis de parede para
+              clientes de alto padrão, designers de interiores, arquitetos e construtoras renomadas.
+            </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              O método ProWall foi criado por um profissional que construiu sua carreira instalando
-              papéis de parede para clientes de alto padrão designers de interiores, arquitetos
-              e construtoras renomadas. Não é teoria: é experiência real transformada em método.
+              Ao perceber que o mercado crescia rapidamente mas faltavam profissionais qualificados,
+              decidiu criar o Método ProWall — um treinamento que transforma iniciantes em
+              instaladores profissionais prontos para faturar, usando a mesma técnica que ele
+              aperfeiçoou ao longo de anos de experiência real no campo.
             </p>
 
             <div className="space-y-4">
