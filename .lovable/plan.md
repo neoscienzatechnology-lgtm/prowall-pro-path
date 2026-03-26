@@ -1,12 +1,9 @@
 
 
-## Plan
+## Plan: Increase Logo Size
 
-### 1. Update WhatsApp phone number across all CTAs
-Replace `5511999999999` with `5521996203486` in all 9 files that contain WhatsApp links:
-- `FloatingCTA.tsx`, `PricingSection.tsx`, `FinalCTASection.tsx`, `OfferSection.tsx`, `TestimonialsSection.tsx`, `TransformationSection.tsx`, `WhatIsSection.tsx`, `HeroSection.tsx`, `MarketOpportunitySection.tsx`
+### Changes
 
-### 2. Set favicon to the site logo
-- Copy `src/assets/logo-prowall.png` to `public/favicon.png`
-- Update `index.html` to add `<link rel="icon" href="/favicon.png" type="image/png">`
+1. **HeroSection.tsx** — Increase logo from `h-14 sm:h-20` to `h-20 sm:h-28`
+2. **Footer.tsx** — Increase logo from `h-12` to `h-16 sm:h-20`
 
