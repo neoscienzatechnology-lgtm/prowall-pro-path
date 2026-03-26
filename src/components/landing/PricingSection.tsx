@@ -94,7 +94,7 @@ const PricingSection = () => {
               </ul>
 
               <a
-                href="https://wa.me/5511999999999?text=Quero%20o%20ingresso%20" 
+                href="https://wa.me/5521996203486?text=Quero%20o%20ingresso%20" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-full inline-flex items-center justify-center gap-3 font-display font-bold text-base px-8 py-4 rounded-xl transition-all duration-300 hover:scale-[1.02] ${

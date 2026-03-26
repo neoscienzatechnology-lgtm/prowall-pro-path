@@ -66,7 +66,7 @@ const OfferSection = () => {
 
             <div className="text-center">
               <a
-                href="https://wa.me/5511999999999?text=Quero%20garantir%20minha%20vaga%20no%20treinamento%20ProWall"
+                href="https://wa.me/5521996203486?text=Quero%20garantir%20minha%20vaga%20no%20treinamento%20ProWall"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-gold-gradient hover:bg-gold-gradient-hover text-primary-foreground font-display font-bold text-lg px-10 py-5 rounded-xl shadow-gold transition-all duration-300 hover:shadow-gold-lg hover:scale-[1.02] animate-pulse-gold"
