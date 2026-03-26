@@ -24,7 +24,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <img src={logoProwall} alt="ProWall" className="h-20 sm:h-28 mb-6 sm:mb-8" />
+            <img src={logoProwall} alt="ProWall" className="h-40 sm:h-56 mb-6 sm:mb-8" />
           </motion.div>
 
           <motion.div
