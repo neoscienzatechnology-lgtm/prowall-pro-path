@@ -6,6 +6,7 @@ const plans = [
     name: "Standard",
     price: "R$ 997",
     highlight: false,
+    link: "https://pay.kiwify.com.br/9ZGraEy",
     features: [
       "3 dias de treinamento presencial intensivo",
       "Material didático completo",
@@ -19,6 +20,7 @@ const plans = [
     name: "Premium",
     price: "R$ 1.297",
     highlight: true,
+    link: "https://pay.kiwify.com.br/4MJ9Y3K",
     features: [
       "Tudo do Standard +",
       "Acompanhamento individual pós-treinamento",
@@ -94,7 +96,7 @@ const PricingSection = () => {
               </ul>
 
               <a
-                href="https://wa.me/5521996203486?text=Quero%20o%20ingresso%20" 
+                href={plan.link} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-full inline-flex items-center justify-center gap-3 font-display font-bold text-base px-8 py-4 rounded-xl transition-all duration-300 hover:scale-[1.02] ${
