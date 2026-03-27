@@ -1,9 +1,12 @@
 
 
-## Plan: Increase Logo Size
+## Plan: Update Pricing Card Links
 
-### Changes
+### Changes in `src/components/landing/PricingSection.tsx`
 
-1. **HeroSection.tsx** — Increase logo from `h-14 sm:h-20` to `h-20 sm:h-28`
-2. **Footer.tsx** — Increase logo from `h-12` to `h-16 sm:h-20`
+1. Add a `link` property to each plan in the `plans` array:
+   - Standard: `https://pay.kiwify.com.br/9ZGraEy`
+   - Premium: `https://pay.kiwify.com.br/4MJ9Y3K`
+
+2. Replace the hardcoded WhatsApp `href` in the CTA button with `plan.link`
 
