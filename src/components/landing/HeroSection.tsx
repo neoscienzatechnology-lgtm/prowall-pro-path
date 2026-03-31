@@ -106,10 +106,13 @@ const HeroSection = () => {
           className="w-full"
         >
           <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
-            <video className="w-full h-full object-cover" controls preload="metadata" playsInline>
-              <source src="/videos/hero-intro.mp4" type="video/mp4" />
-              Seu navegador não suporta reprodução de vídeo.
-            </video>
+            <iframe
+              src="https://drive.google.com/file/d/1-uoOtg-mKfs_IJtY_G7kWhm5fWyM_9I7/preview"
+              className="w-full h-full"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="Vídeo de apresentação ProWall"
+            />
           </div>
         </motion.div>
       </div>
