@@ -1,12 +1,22 @@
 
 
-## Plan: Update Pricing Card Links
+## Plan: Fix broken video references
 
-### Changes in `src/components/landing/PricingSection.tsx`
+### Problem
+Two videos are broken because the code references filenames that don't exist:
+- `HeroSection.tsx` → `/videos/hero-intro.mp4` (file missing)
+- `VSLSection.tsx` → `/videos/vsl-main.mp4` (file missing)
 
-1. Add a `link` property to each plan in the `plans` array:
-   - Standard: `https://pay.kiwify.com.br/9ZGraEy`
-   - Premium: `https://pay.kiwify.com.br/4MJ9Y3K`
+The actual uploaded video files are:
+- `public/videos/VSL- LANDING PAGE FINAL.mp4` (200MB) — likely the VSL
+- `public/videos/Vídeo 1 -landing page (horizontal).mp4` (37MB) — likely the hero intro
 
-2. Replace the hardcoded WhatsApp `href` in the CTA button with `plan.link`
+### Changes
+
+1. **HeroSection.tsx** — Update video source from `/videos/hero-intro.mp4` to `/videos/Vídeo 1 -landing page (horizontal).mp4`
+
+2. **VSLSection.tsx** — Update video source from `/videos/vsl-main.mp4` to `/videos/VSL- LANDING PAGE FINAL.mp4`
+
+### Note
+If the file assignments above are swapped (wrong video in wrong section), they can be easily switched after testing.
 
