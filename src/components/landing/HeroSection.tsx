@@ -107,7 +107,7 @@ const HeroSection = () => {
         >
           <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
             <video className="w-full h-full object-cover" controls preload="metadata" playsInline>
-              <source src="/videos/V%C3%ADdeo%201%20-landing%20page%20(horizontal).mp4" type="video/mp4" />
+              <source src="/videos/hero-intro.mp4" type="video/mp4" />
               Seu navegador não suporta reprodução de vídeo.
             </video>
           </div>
