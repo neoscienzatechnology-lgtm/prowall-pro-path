@@ -1,22 +1,16 @@
 
 
-## Plan: Fix broken video references
+## Plan: Replace VSL and Hero Videos
 
-### Problem
-Two videos are broken because the code references filenames that don't exist:
-- `HeroSection.tsx` → `/videos/hero-intro.mp4` (file missing)
-- `VSLSection.tsx` → `/videos/vsl-main.mp4` (file missing)
+The user uploaded two .MOV files to replace the current videos:
+- **IMG_7959.MOV** → VSL video (`public/videos/vsl-main.mp4`)
+- **IMG_7957.MOV** → Hero video (`public/videos/hero-intro.mp4`)
 
-The actual uploaded video files are:
-- `public/videos/VSL- LANDING PAGE FINAL.mp4` (200MB) — likely the VSL
-- `public/videos/Vídeo 1 -landing page (horizontal).mp4` (37MB) — likely the hero intro
+### Steps
 
-### Changes
+1. **Copy IMG_7959.MOV** to `public/videos/vsl-main.mp4` (replacing current VSL video)
+2. **Copy IMG_7957.MOV** to `public/videos/hero-intro.mp4` (replacing current hero video)
+3. **Update video source tags** in `HeroSection.tsx` and `VSLSection.tsx` to use `video/mp4` type (MOV files with H.264 codec work in browsers with mp4 source type, but if needed we'll add `video/quicktime` as fallback)
 
-1. **HeroSection.tsx** — Update video source from `/videos/hero-intro.mp4` to `/videos/Vídeo 1 -landing page (horizontal).mp4`
-
-2. **VSLSection.tsx** — Update video source from `/videos/vsl-main.mp4` to `/videos/VSL- LANDING PAGE FINAL.mp4`
-
-### Note
-If the file assignments above are swapped (wrong video in wrong section), they can be easily switched after testing.
+No other code changes needed — the file paths remain the same.
 
