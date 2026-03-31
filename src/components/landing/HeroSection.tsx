@@ -6,19 +6,19 @@ import heroPhoto from "@/assets/photo-1.png";
 const HeroSection = () => {
   return (
     <section className="relative w-full overflow-hidden">
-      {/* Background image - full width, visible */}
-      <div className="absolute inset-0">
-        <img
-          src={heroPhoto}
-          alt="Instalação profissional de papel de parede - Profissão ProWall"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" />
-      </div>
+      <div className="relative min-h-[620px] sm:min-h-[700px] lg:min-h-[760px]">
+        <div className="absolute inset-0 bg-background">
+          <img
+            src={heroPhoto}
+            alt="Instalação profissional de papel de parede - Profissão ProWall"
+            className="w-full h-full object-contain object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-background/20" />
+        </div>
 
-      <div className="container-landing relative z-10 pt-24 sm:pt-32 pb-16 sm:pb-20">
-        <div className="max-w-2xl">
+        <div className="container-landing relative z-10 pt-8 sm:pt-12 pb-16 sm:pb-20">
+          <div className="max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -93,9 +93,12 @@ const HeroSection = () => {
               </div>
             ))}
           </motion.div>
+          </div>
         </div>
+      </div>
 
-        {/* Video de Apresentação do Curso - full width */}
+      {/* Video de Apresentação do Curso - full width */}
+      <div className="container-landing relative z-10 pb-16 sm:pb-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -103,16 +106,10 @@ const HeroSection = () => {
           className="w-full"
         >
           <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 sm:gap-4 bg-background/80">
-              <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-gold-gradient flex items-center justify-center shadow-gold cursor-pointer hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground ml-1">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <span className="text-muted-foreground font-display font-semibold text-xs sm:text-sm tracking-wide uppercase">
-                Vídeo de Apresentação do Curso
-              </span>
-            </div>
+            <video className="w-full h-full object-cover" controls preload="metadata" playsInline>
+              <source src="/videos/V%C3%ADdeo%201%20-landing%20page%20(horizontal).mp4" type="video/mp4" />
+              Seu navegador não suporta reprodução de vídeo.
+            </video>
           </div>
         </motion.div>
       </div>

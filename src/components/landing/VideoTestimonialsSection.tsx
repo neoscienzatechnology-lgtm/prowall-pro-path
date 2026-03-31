@@ -1,26 +1,25 @@
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
 
 const videoTestimonials = [
   {
-    name: "Carlos M.",
-    role: "Começou do zero — fatura R$ 8k/mês",
-    thumbnail: "",
+    name: "Eduardo Gonçalves",
+    role: "Fundador da Fixpano",
+    videoSrc: "/videos/IMG_7931.MP4",
   },
   {
-    name: "Fernanda L.",
-    role: "Montou empresa com 2 funcionários",
-    thumbnail: "",
+    name: "Eduardo Duarte",
+    role: "Instalador e CEO na Duarte Películas",
+    videoSrc: "/videos/IMG_7932.MP4",
   },
   {
-    name: "Roberto S.",
-    role: "Ex-pintor — triplicou a renda",
-    thumbnail: "",
+    name: "Fabrício Shimidt",
+    role: "Fundador e instalador da FaDecor",
+    videoSrc: "/videos/IMG_7930.MP4",
   },
   {
-    name: "Amanda R.",
-    role: "Designer — abriu filial em 6 meses",
-    thumbnail: "",
+    name: "Rodrigo Novelli",
+    role: "Fundador da RNC",
+    videoSrc: "/videos/IMG_7929.MP4",
   },
 ];
 
@@ -45,24 +44,31 @@ const VideoTestimonialsSection = () => {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
-          {videoTestimonials.map(({ name, role }, i) => (
+          {videoTestimonials.map(({ name, role, videoSrc }, i) => (
             <motion.div
               key={name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group relative"
+              className="bg-card border border-border rounded-2xl overflow-hidden"
             >
-              <div className="aspect-[9/16] bg-card border border-border rounded-2xl overflow-hidden relative flex items-center justify-center cursor-pointer">
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
-                <div className="w-14 h-14 rounded-full bg-gold/20 border-2 border-gold flex items-center justify-center z-20 group-hover:scale-110 transition-transform duration-300">
-                  <Play className="w-6 h-6 text-gold ml-1" />
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
-                  <p className="font-display font-bold text-sm">{name}</p>
-                  <p className="text-gold text-xs">{role}</p>
-                </div>
+              <div className="aspect-[9/16] bg-black">
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  preload="metadata"
+                  playsInline
+                >
+                  <source src={videoSrc} type="video/mp4" />
+                  Seu navegador não suporta reprodução de vídeo.
+                </video>
+              </div>
+              <div className="p-4 border-t border-border bg-muted/20">
+                <span className="inline-flex items-center rounded-full bg-gold/10 px-3 py-1 text-xs font-display font-bold text-gold tracking-wide">
+                  {name}
+                </span>
+                <p className="mt-2 text-xs text-muted-foreground">{role}</p>
               </div>
             </motion.div>
           ))}

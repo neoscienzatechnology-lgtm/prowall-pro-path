@@ -28,16 +28,10 @@ const VSLSection = () => {
           className="w-full max-w-4xl mx-auto"
         >
           <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 sm:gap-4 bg-background/80">
-              <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-gold-gradient flex items-center justify-center shadow-gold cursor-pointer hover:scale-110 transition-transform">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 sm:w-8 sm:h-8 text-primary-foreground ml-1">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <span className="text-muted-foreground font-display font-semibold text-xs sm:text-sm tracking-wide uppercase">
-                Vídeo VSL
-              </span>
-            </div>
+            <video className="w-full h-full object-cover" controls preload="metadata" playsInline>
+              <source src="/videos/VSL- LANDING PAGE FINAL.mp4" type="video/mp4" />
+              Seu navegador não suporta reprodução de vídeo.
+            </video>
           </div>
         </motion.div>
       </div>
