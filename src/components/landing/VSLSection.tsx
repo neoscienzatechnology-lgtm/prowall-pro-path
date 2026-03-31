@@ -28,10 +28,13 @@ const VSLSection = () => {
           className="w-full max-w-4xl mx-auto"
         >
           <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
-            <video className="w-full h-full object-cover" controls preload="metadata" playsInline>
-              <source src="/videos/vsl-main.mp4" type="video/mp4" />
-              Seu navegador não suporta reprodução de vídeo.
-            </video>
+            <iframe
+              src="https://drive.google.com/file/d/1JfuOfrnlc2ARwcgtkOMovJjKiDjcY2st/preview"
+              className="w-full h-full"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="VSL ProWall"
+            />
           </div>
         </motion.div>
       </div>
