@@ -24,7 +24,6 @@ const plans = [
     features: [
       "Tudo do Standard +",
       "Acompanhamento individual pós-treinamento",
-      "Kit de ferramentas profissional incluso",
       "Mentoria de precificação e vendas",
       "Acesso prioritário às próximas turmas",
       "Suporte direto com o instrutor por 30 dias",
