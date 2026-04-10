@@ -4,7 +4,8 @@ import { ArrowRight, Check, Star } from "lucide-react";
 const plans = [
   {
     name: "Standard",
-    price: "R$ 997",
+    price: "12x de R$103,11",
+    cashPrice: "ou R$997 à vista",
     highlight: false,
     link: "https://pay.kiwify.com.br/9ZGraEy",
     features: [
@@ -18,7 +19,8 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "R$ 1.297",
+    price: "12x de R$123,80",
+    cashPrice: "ou R$1197 à vista",
     highlight: true,
     link: "https://pay.kiwify.com.br/4MJ9Y3K",
     features: [
@@ -78,11 +80,11 @@ const PricingSection = () => {
               <div className="text-center mb-8">
                 <h3 className="font-display font-bold text-xl mb-2">{plan.name}</h3>
                 <div className="flex items-baseline justify-center gap-1">
-                  <span className={`font-display font-extrabold text-4xl lg:text-5xl ${plan.highlight ? "text-gold" : ""}`}>
+                  <span className={`font-display font-extrabold text-4xl lg:text-4xl ${plan.highlight ? "text-gold" : ""}`}>
                     {plan.price}
                   </span>
                 </div>
-                <p className="text-muted-foreground text-sm mt-2">ou em até 12x no cartão</p>
+                <p className="text-muted-foreground text-sm mt-2">{plan.cashPrice}</p>
               </div>
 
               <ul className="space-y-3 mb-8">
