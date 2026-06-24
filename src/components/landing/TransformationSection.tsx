@@ -12,8 +12,7 @@ const before = [
 const after = [
   "Profissional qualificado com técnica e confiança",
   "Agenda de clientes e renda previsível",
-  "Autonomia total — trabalhe para si mesmo",
-  "Cobrando R$ 500 a R$ 3.000+ por projeto",
+  "Autonomia total para trabalhar por si mesmo",
   "Atuando em um mercado valorizado e em crescimento",
 ];
 

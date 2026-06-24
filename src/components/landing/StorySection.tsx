@@ -28,7 +28,7 @@ const StorySection = () => {
           className="space-y-6 text-muted-foreground text-lg leading-relaxed"
         >
           <p>
-            O mercado de papel de parede premium crescia — e continua crescendo — a cada ano. Designers,
+            O mercado de papel de parede premium crescia, e continua crescendo, a cada ano. Designers,
             arquitetos e clientes de alto padrão buscam profissionais capacitados. Mas a realidade é dura:{" "}
             <strong className="text-foreground">faltam instaladores qualificados</strong>.
           </p>

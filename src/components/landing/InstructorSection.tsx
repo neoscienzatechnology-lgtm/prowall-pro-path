@@ -48,7 +48,7 @@ const InstructorSection = () => {
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Ao perceber que o mercado crescia rapidamente mas faltavam profissionais qualificados,
-              decidiu criar o Método ProWall — um treinamento que transforma iniciantes em
+              decidiu criar o Método ProWall. Um treinamento que transforma iniciantes em
               instaladores profissionais prontos para faturar, usando a mesma técnica que ele
               aperfeiçoou ao longo de anos de experiência real no campo.
             </p>

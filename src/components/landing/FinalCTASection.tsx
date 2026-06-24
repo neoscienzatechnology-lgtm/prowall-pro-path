@@ -13,12 +13,12 @@ const FinalCTASection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold leading-tight mb-6">
-            Você pode continuar adiando — ou pode{" "}
+            Você pode continuar adiando ou pode{" "}
             <span className="text-gold-gradient">começar um negócio lucrativo agora</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
             Enquanto você pensa, outros estão se formando, fechando clientes e faturando.
-            Sua nova profissão pode começar em 3 dias.
+            Sua nova profissão pode começar agora.
           </p>
 
           <a

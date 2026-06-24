@@ -39,10 +39,10 @@ const WhatIsSection = () => {
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
               <p>
                 Não é apenas um curso técnico. É um <strong className="text-foreground">treinamento completo de profissionalização</strong> que
-                te ensina a instalar papel de parede com excelência — e a transformar isso em um negócio lucrativo.
+                te ensina a instalar papel de parede com excelência e a transformar isso em um negócio lucrativo.
               </p>
               <p>
-                Em <strong className="text-foreground">3 dias de imersão presencial</strong>, você sai com domínio técnico,
+                Com o <strong className="text-foreground">Curso Online ProWall</strong>, você desenvolve domínio técnico,
                 visão de mercado, estratégia de precificação e confiança para fechar seus primeiros clientes.
               </p>
             </div>

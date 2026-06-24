@@ -1,22 +1,10 @@
 import { motion } from "framer-motion";
-import { Star, ArrowRight } from "lucide-react";
+import { ArrowRight, Video } from "lucide-react";
 
 const testimonials = [
-  {
-    name: "Carlos M.",
-    role: "Começou do zero — hoje fatura R$ 8k/mês",
-    text: "Em 3 meses depois da imersão, já tinha carteira de clientes. O ProWall me deu técnica e confiança para cobrar o que meu trabalho vale.",
-  },
-  {
-    name: "Fernanda L.",
-    role: "Empreendedora — 2 funcionários contratados",
-    text: "Saí da imersão e montei minha empresa. Hoje tenho agenda cheia e já contratei 2 instaladores. O ProWall mudou minha vida financeira.",
-  },
-  {
-    name: "Roberto S.",
-    role: "Ex-pintor — triplicou a renda",
-    text: "Trabalhava como pintor e ganhava pouco. Depois do ProWall, passei a instalar papel de parede premium e minha renda triplicou.",
-  },
+  { name: "Eduardo Gonçalves", role: "Instalador parceiro — vídeo em breve" },
+  { name: "Rodrigo Novelli", role: "Instalador parceiro — vídeo em breve" },
+  { name: "Eduardo Duarte", role: "Instalador parceiro — vídeo em breve" },
 ];
 
 const TestimonialsSection = () => {
@@ -40,22 +28,22 @@ const TestimonialsSection = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {testimonials.map(({ name, role, text }, i) => (
+          {testimonials.map(({ name, role }, i) => (
             <motion.div
               key={name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="bg-card border border-border rounded-2xl p-8"
+              className="bg-card border border-border rounded-2xl overflow-hidden"
             >
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, j) => (
-                  <Star key={j} className="w-4 h-4 fill-gold text-gold" />
-                ))}
+              <div className="aspect-video bg-muted/30 flex flex-col items-center justify-center gap-3 text-muted-foreground p-6 text-center">
+                <Video className="w-10 h-10 text-gold/60" />
+                <span className="text-xs font-display font-semibold uppercase tracking-wider">
+                  Vídeo em breve
+                </span>
               </div>
-              <p className="text-muted-foreground leading-relaxed mb-6 italic">"{text}"</p>
-              <div>
+              <div className="p-6 border-t border-border bg-muted/20">
                 <p className="font-display font-bold">{name}</p>
                 <p className="text-gold text-sm font-medium">{role}</p>
               </div>

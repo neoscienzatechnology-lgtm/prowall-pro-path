@@ -1,26 +1,11 @@
 import { motion } from "framer-motion";
+import { Video } from "lucide-react";
 
 const videoTestimonials = [
-  {
-    name: "Eduardo Gonçalves",
-    role: "Fundador da Fixpano",
-    videoSrc: "/videos/IMG_7931.MP4",
-  },
-  {
-    name: "Eduardo Duarte",
-    role: "Instalador e CEO na Duarte Películas",
-    videoSrc: "/videos/IMG_7932.MP4",
-  },
-  {
-    name: "Fabrício Shimidt",
-    role: "Fundador e instalador da FaDecor",
-    videoSrc: "/videos/IMG_7930.MP4",
-  },
-  {
-    name: "Rodrigo Novelli",
-    role: "Fundador da RNC",
-    videoSrc: "/videos/IMG_7929.MP4",
-  },
+  { name: "Aluno 1", role: "Depoimento gravado no curso — em breve" },
+  { name: "Aluno 2", role: "Depoimento gravado no curso — em breve" },
+  { name: "Aluno 3", role: "Depoimento gravado no curso — em breve" },
+  { name: "Aluno 4", role: "Depoimento gravado no curso — em breve" },
 ];
 
 const VideoTestimonialsSection = () => {
@@ -44,7 +29,7 @@ const VideoTestimonialsSection = () => {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
-          {videoTestimonials.map(({ name, role, videoSrc }, i) => (
+          {videoTestimonials.map(({ name, role }, i) => (
             <motion.div
               key={name}
               initial={{ opacity: 0, y: 30 }}
@@ -53,16 +38,11 @@ const VideoTestimonialsSection = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-card border border-border rounded-2xl overflow-hidden"
             >
-              <div className="aspect-[9/16] bg-black">
-                <video
-                  className="w-full h-full object-cover"
-                  controls
-                  preload="metadata"
-                  playsInline
-                >
-                  <source src={videoSrc} type="video/mp4" />
-                  Seu navegador não suporta reprodução de vídeo.
-                </video>
+              <div className="aspect-[9/16] bg-muted/30 flex flex-col items-center justify-center gap-3 text-muted-foreground p-6 text-center">
+                <Video className="w-10 h-10 text-gold/60" />
+                <span className="text-xs font-display font-semibold uppercase tracking-wider">
+                  Vídeo em breve
+                </span>
               </div>
               <div className="p-4 border-t border-border bg-muted/20">
                 <span className="inline-flex items-center rounded-full bg-gold/10 px-3 py-1 text-xs font-display font-bold text-gold tracking-wide">
