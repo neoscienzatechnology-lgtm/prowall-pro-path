@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Check, ShieldCheck, Clock, Users, AlertTriangle } from "lucide-react";
+import { ArrowRight, Check, ShieldCheck, Clock, AlertTriangle } from "lucide-react";
 
 const included = [
   "Acesso vitalício às aulas online",
