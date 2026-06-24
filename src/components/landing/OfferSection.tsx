@@ -1,16 +1,15 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Check, ShieldCheck, Clock, Users, AlertTriangle } from "lucide-react";
+import { ArrowRight, Check, ShieldCheck, Clock, AlertTriangle } from "lucide-react";
 
 const included = [
-  "3 dias de treinamento presencial intensivo",
+  "Acesso vitalício às aulas online",
   "Do zero ao avançado — sem pré-requisitos",
-  "Prática real com materiais profissionais",
+  "Demonstrações práticas com materiais profissionais",
   "Técnicas de acabamento perfeito",
-  "Correção ao vivo e acompanhamento individual",
   "Como precificar e vender seu serviço",
   "Estratégias para conseguir clientes",
   "Visão completa de mercado e posicionamento",
-  "Networking com profissionais da área",
+  "Grupo exclusivo de alunos",
   "Certificado de conclusão",
 ];
 
@@ -43,11 +42,7 @@ const OfferSection = () => {
             <div className="flex flex-wrap gap-4 mb-8 justify-center">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-gold" />
-                3 dias presenciais
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Users className="w-4 h-4 text-gold" />
-                Turma reduzida
+                Acesso vitalício
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <ShieldCheck className="w-4 h-4 text-gold" />

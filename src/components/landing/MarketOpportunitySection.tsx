@@ -6,7 +6,7 @@ const reasons = [
   { icon: Crown, title: "Clientes de Alto Padrão", desc: "Atenda designers, arquitetos e clientes que pagam bem por um serviço impecável." },
   { icon: Users, title: "Poucos Profissionais Qualificados", desc: "A maioria dos instaladores não tem formação. Quem tem, domina o mercado." },
   { icon: Zap, title: "Retorno Rápido do Investimento", desc: "É possível recuperar o valor do treinamento nos primeiros trabalhos." },
-  { icon: Target, title: "Ticket Médio Elevado", desc: "Uma única instalação pode render de R$ 500 a R$ 3.000+ dependendo do projeto." },
+  { icon: Target, title: "Ticket Médio Elevado", desc: "Uma única instalação pode gerar um faturamento expressivo dependendo da complexidade do projeto." },
   { icon: BarChart3, title: "Trabalhe Por Conta Própria", desc: "Defina seus horários, seus preços e construa um negócio com autonomia total." },
 ];
 

@@ -3,7 +3,7 @@ import { Layers, Wrench, Crown, Sparkles, DollarSign, Users } from "lucide-react
 
 const steps = [
   { icon: Layers, step: "01", title: "Fundamentos da Instalação", desc: "Domine a base técnica: tipos de papel, superfícies, preparação e cuidados essenciais." },
-  { icon: Wrench, step: "02", title: "Ferramentas e Preparação Profissional", desc: "Conheça o kit profissional e aprenda a preparar qualquer ambiente para instalação perfeita." },
+  { icon: Wrench, step: "02", title: "Ferramentas e Preparação Profissional", desc: "Conheça os equipamentos essenciais do profissional e aprenda a preparar qualquer ambiente para instalação perfeita." },
   { icon: Crown, step: "03", title: "Instalação de Papéis Premium", desc: "Técnicas avançadas para papéis de alta qualidade, vinílicos, texturizados e especiais." },
   { icon: Sparkles, step: "04", title: "Acabamento Perfeito", desc: "Detalhes que separam o amador do profissional: cantos, emendas, recortes e alinhamentos." },
   { icon: DollarSign, step: "05", title: "Como Precificar Seu Serviço", desc: "Aprenda a calcular preços justos que valorizem seu trabalho e garantam lucro real." },
@@ -29,7 +29,7 @@ const MethodSection = () => {
             <span className="text-gold-gradient">ProWall</span>
           </h2>
           <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
-            Um caminho claro e estruturado que te leva do zero à profissionalização completa em 3 dias.
+            Um caminho claro e estruturado que te leva do zero à profissionalização completa.
           </p>
         </motion.div>
 
