@@ -66,7 +66,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 mb-8"
           >
             <a
-              href="https://wa.me/5521996203486?text=Quero%20come%C3%A7ar%20o%20treinamento%20ProWall"
+              href="https://pay.kiwify.com.br/gD2NoHl"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gold-gradient hover:bg-gold-gradient-hover text-primary-foreground font-display font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg shadow-gold transition-all duration-300 hover:shadow-gold-lg hover:scale-[1.02] flex items-center justify-center gap-3 animate-pulse-gold"
