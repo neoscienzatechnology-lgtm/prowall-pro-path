@@ -1,22 +1,26 @@
-## Objetivo
-Eliminar todas as referências a "imersão presencial", "treinamento presencial", e "3 dias" no hero, FAQ e metadados (que aparecem em links compartilhados).
+## Plan: Update all CTA buttons to the Kiwify checkout link
 
-## Alterações
+### Goal
+Replace every call-to-action button link on the landing page with the new Kiwify checkout URL: `https://pay.kiwify.com.br/gD2NoHl`.
 
-### 1. `src/components/landing/HeroSection.tsx`
-- Substituir badge `"Treinamento Presencial · 3 Dias"` por `"Curso Online Completo"`.
+### Files to edit
+1. `src/components/landing/HeroSection.tsx` — main hero CTA button.
+2. `src/components/landing/FloatingCTA.tsx` — mobile sticky bottom CTA.
+3. `src/components/landing/WhatIsSection.tsx` — section CTA button.
+4. `src/components/landing/MarketOpportunitySection.tsx` — section CTA button.
+5. `src/components/landing/TransformationSection.tsx` — section CTA button.
+6. `src/components/landing/TestimonialsSection.tsx` — results section CTA button.
+7. `src/components/landing/FinalCTASection.tsx` — final CTA button.
+8. `src/components/landing/OfferSection.tsx` — offer section CTA button.
+9. `src/components/landing/PricingSection.tsx` — update the Kiwify `plan.link` from the old URL to the new URL.
 
-### 2. `src/components/landing/FAQSection.tsx`
-- FAQ "Essa imersão é para iniciantes?" → `"Esse curso é para iniciantes?"` e trocar "imersão" por "curso" na resposta.
-- FAQ "Em quanto tempo posso começar a trabalhar?" → resposta: trocar "após a imersão" por "após concluir o curso".
-- FAQ "O evento é presencial?" → substituir por: `{ q: "O curso é online?", a: "Sim, 100% online. Você acessa as aulas de onde estiver, no seu ritmo, com material didático completo e suporte direto." }`.
+### What will change
+- Every button currently pointing to `https://wa.me/5521996203486?text=...` will be updated to `https://pay.kiwify.com.br/gD2NoHl`.
+- The `PricingSection.tsx` plan object `link` will be updated from the old Kiwify URL to the new one.
+- All `target="_blank"` and `rel="noopener noreferrer"` attributes remain unchanged.
+- No other text or visual changes will be made.
 
-### 3. `index.html` (meta tags — preview de links)
-- `<title>` → `"Profissão ProWall | Curso Online de Instalação Profissional de Papel de Parede"`
-- `<meta name="description">` → `"Aprenda instalação profissional de papel de parede com o Curso Online ProWall. Do zero ao avançado: técnica, acabamento, visão de mercado e uma profissão lucrativa."`
-- `<meta name="keywords">` → remover "imersão presencial" e "curso profissionalizante presencial"; manter/incluir "curso online de papel de parede".
-- JSON-LD: trocar `@type: "Event"` por `@type: "Course"`, atualizar `name` para "Profissão ProWall — Curso Online" e `description` para versão online.
-- `og:title`, `twitter:title`, `og:description`, `twitter:description` → mesmas strings acima.
-
-## Fora de escopo
-Não tocar outros componentes nesta passada — somente os locais que ainda exibem "presencial / 3 dias / imersão".
+### Verification
+- Search the codebase for any remaining `wa.me` links inside button/CTA elements to confirm they are gone.
+- Confirm the pricing link now equals `https://pay.kiwify.com.br/gD2NoHl`.
+- Run a build/typecheck to ensure no syntax errors.

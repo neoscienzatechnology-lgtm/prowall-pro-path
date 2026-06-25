@@ -5,7 +5,7 @@ const plan = {
   name: "Curso Online ProWall",
   price: "12x de R$61,80",
   cashPrice: "ou R$597 à vista",
-  link: "https://pay.kiwify.com.br/9ZGraEy",
+  link: "https://pay.kiwify.com.br/gD2NoHl",
   features: [
     "Acesso vitalício às aulas online",
     "Material didático completo",

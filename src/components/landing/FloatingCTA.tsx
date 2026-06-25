@@ -10,7 +10,7 @@ const FloatingCTA = () => {
       className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background/80 backdrop-blur-lg border-t border-border md:hidden"
     >
       <a
-        href="https://wa.me/5521996203486?text=Quero%20come%C3%A7ar%20o%20treinamento%20ProWall"
+        href="https://pay.kiwify.com.br/gD2NoHl"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 w-full bg-gold-gradient text-primary-foreground font-display font-bold py-4 rounded-xl shadow-gold"
