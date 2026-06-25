@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 
 const faqs = [
   { q: "Preciso ter experiência para começar?", a: "Não. O treinamento foi desenhado para levar qualquer pessoa do zero ao nível profissional. Você não precisa de experiência prévia." },
-  { q: "Essa imersão é para iniciantes?", a: "Sim! Iniciantes são muito bem-vindos. O conteúdo parte do básico e avança progressivamente. Se você já tem alguma experiência, vai aprimorar sua técnica e aprender a precificar e vender seu serviço." },
+  { q: "Esse curso é para iniciantes?", a: "Sim! Iniciantes são muito bem-vindos. O conteúdo parte do básico e avança progressivamente. Se você já tem alguma experiência, vai aprimorar sua técnica e aprender a precificar e vender seu serviço." },
   { q: "Quanto um instalador profissional pode cobrar?", a: "Um instalador qualificado pode cobrar entre R$ 500 e R$ 3.000+ por projeto, dependendo do tipo de papel e complexidade. Profissionais com boa agenda faturam R$ 5.000 a R$ 15.000 por mês." },
-  { q: "Quais ferramentas vou precisar?", a: "Ensinamos tudo sobre as ferramentas no treinamento. O kit inicial é acessível e você pode começar com um investimento baixo em materiais." },
-  { q: "Em quanto tempo posso começar a trabalhar?", a: "Muitos alunos fecham seus primeiros clientes ainda na primeira semana após a imersão. Você sai pronto para atuar." },
+  { q: "Quais ferramentas vou precisar?", a: "Ensinamos tudo sobre as ferramentas no curso. O kit inicial é acessível e você pode começar com um investimento baixo em materiais." },
+  { q: "Em quanto tempo posso começar a trabalhar?", a: "Muitos alunos fecham seus primeiros clientes ainda na primeira semana após concluir o curso. Você sai pronto para atuar." },
   { q: "O curso ensina só técnica ou também como conseguir clientes?", a: "Os dois. Além da parte técnica completa, ensinamos estratégias práticas para conseguir seus primeiros clientes, precificar corretamente e se posicionar no mercado." },
-  { q: "O evento é presencial?", a: "Sim, 100% presencial. A prática ao vivo e a correção em tempo real são essenciais para um aprendizado completo e acelerado." },
+  { q: "O curso é online?", a: "Sim, 100% online. Você acessa as aulas de onde estiver, no seu ritmo, com material didático completo e suporte direto." },
   { q: "As vagas são limitadas?", a: "Sim. Para garantir qualidade e atenção individual, as turmas são reduzidas. Recomendamos inscrição antecipada." },
   { q: "Tem garantia?", a: "Sim! Oferecemos garantia de 7 dias. Se não for para você, devolvemos 100% do valor sem burocracia." },
 ];

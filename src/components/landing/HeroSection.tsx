@@ -34,7 +34,7 @@ const HeroSection = () => {
             className="flex items-center gap-2 mb-4 sm:mb-6"
           >
             <span className="bg-gold-gradient px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-display font-bold text-primary-foreground tracking-wide uppercase">
-              Treinamento Presencial · 3 Dias
+              Curso Online Completo
             </span>
           </motion.div>
 
