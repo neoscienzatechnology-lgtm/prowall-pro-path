@@ -6,7 +6,7 @@ import marcelAsset from "@/assets/testimonials/marcel.mov.asset.json";
 const videoTestimonials = [
   { name: "Fabrício Carvalho", role: "Aluno ProWall", src: fabricioAsset.url, type: "video/quicktime" },
   { name: "Éder Marques", role: "Aluno ProWall", src: cebolaAsset.url, type: "video/quicktime" },
-  { name: "Marcel", role: "Aluno ProWall", src: marcelAsset.url, type: "video/quicktime" },
+  { name: "Marcel Oliveira", role: "Aluno ProWall", src: marcelAsset.url, type: "video/quicktime" },
 ];
 
 const VideoTestimonialsSection = () => {
