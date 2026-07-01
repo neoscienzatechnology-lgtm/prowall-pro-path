@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Award, TrendingUp, DollarSign } from "lucide-react";
 import logoProwall from "@/assets/logo-prowall.png";
 import heroPhoto from "@/assets/photo-1.png";
+import heroVideo from "@/assets/videos/hero-intro.mov.asset.json";
 
 const HeroSection = () => {
   return (
@@ -106,11 +107,12 @@ const HeroSection = () => {
           className="w-full"
         >
           <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
-            <iframe
-              src="https://drive.google.com/file/d/1-uoOtg-mKfs_IJtY_G7kWhm5fWyM_9I7/preview"
-              className="w-full h-full"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
+            <video
+              src={heroVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full h-full object-cover"
               title="Vídeo de apresentação ProWall"
             />
           </div>
