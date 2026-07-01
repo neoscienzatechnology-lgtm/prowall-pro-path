@@ -1,26 +1,24 @@
-## Plan: Update all CTA buttons to the Kiwify checkout link
+Substituir os placeholders da seção "Depoimentos em Vídeo" pelos 3 vídeos enviados, hospedados no Lovable CDN.
 
-### Goal
-Replace every call-to-action button link on the landing page with the new Kiwify checkout URL: `https://pay.kiwify.com.br/gD2NoHl`.
+### Vídeos recebidos
+- Depoimento_Fabrício.mov → Fabrício
+- Depoimeto_Cebola_1.mov → Cebola
+- Depoimento_Marcel_1.mov → Marcel
 
-### Files to edit
-1. `src/components/landing/HeroSection.tsx` — main hero CTA button.
-2. `src/components/landing/FloatingCTA.tsx` — mobile sticky bottom CTA.
-3. `src/components/landing/WhatIsSection.tsx` — section CTA button.
-4. `src/components/landing/MarketOpportunitySection.tsx` — section CTA button.
-5. `src/components/landing/TransformationSection.tsx` — section CTA button.
-6. `src/components/landing/TestimonialsSection.tsx` — results section CTA button.
-7. `src/components/landing/FinalCTASection.tsx` — final CTA button.
-8. `src/components/landing/OfferSection.tsx` — offer section CTA button.
-9. `src/components/landing/PricingSection.tsx` — update the Kiwify `plan.link` from the old URL to the new URL.
+### Passos
 
-### What will change
-- Every button currently pointing to `https://wa.me/5521996203486?text=...` will be updated to `https://pay.kiwify.com.br/gD2NoHl`.
-- The `PricingSection.tsx` plan object `link` will be updated from the old Kiwify URL to the new one.
-- All `target="_blank"` and `rel="noopener noreferrer"` attributes remain unchanged.
-- No other text or visual changes will be made.
+1. **Upload ao CDN Lovable**
+   - Rodar `lovable-assets create` para cada um dos 3 vídeos direto de `/mnt/user-uploads/`.
+   - Salvar pointers em `src/assets/testimonials/{fabricio,cebola,marcel}.mov.asset.json`.
 
-### Verification
-- Search the codebase for any remaining `wa.me` links inside button/CTA elements to confirm they are gone.
-- Confirm the pricing link now equals `https://pay.kiwify.com.br/gD2NoHl`.
-- Run a build/typecheck to ensure no syntax errors.
+2. **Atualizar `src/components/landing/VideoTestimonialsSection.tsx`**
+   - Reduzir grid de 4 → 3 colunas (`sm:grid-cols-2 lg:grid-cols-3`).
+   - Trocar array de placeholders pelos 3 depoimentos reais (nomes: Fabrício, Cebola, Marcel; role: "Aluno ProWall").
+   - Substituir bloco placeholder por tag `<video>` com `controls`, `playsInline`, `preload="metadata"`, mantendo `aspect-[9/16]`.
+   - Importar os 3 `.asset.json` e usar `asset.url` como `src`.
+
+3. **Validação**
+   - Conferir no preview que os 3 vídeos carregam e reproduzem em desktop e mobile, sem quebra de layout.
+
+### Observação
+Foram enviados 3 vídeos (o combinado eram 4). Se quiser adicionar o 4º depois, é só me enviar — mantenho o grid ajustável.
