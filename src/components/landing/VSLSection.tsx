@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import vslVideo from "@/assets/videos/vsl-main.mov.asset.json";
+
 
 const VSLSection = () => {
   return (
@@ -28,11 +30,12 @@ const VSLSection = () => {
           className="w-full max-w-4xl mx-auto"
         >
           <div className="relative aspect-video rounded-xl overflow-hidden border-2 border-gold/30 shadow-gold-lg bg-card">
-            <iframe
-              src="https://drive.google.com/file/d/1JfuOfrnlc2ARwcgtkOMovJjKiDjcY2st/preview"
-              className="w-full h-full"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
+            <video
+              src={vslVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full h-full object-cover"
               title="VSL ProWall"
             />
           </div>

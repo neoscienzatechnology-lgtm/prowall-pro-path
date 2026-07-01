@@ -1,24 +1,16 @@
-Substituir os placeholders da seção "Depoimentos em Vídeo" pelos 3 vídeos enviados, hospedados no Lovable CDN.
+## Plano: Substituir vídeos do Hero e VSL
 
-### Vídeos recebidos
-- Depoimento_Fabrício.mov → Fabrício
-- Depoimeto_Cebola_1.mov → Cebola
-- Depoimento_Marcel_1.mov → Marcel
+Os dois arquivos enviados serão hospedados no CDN da Lovable e usados para substituir os embeds atuais do Google Drive.
+
+### Mapeamento
+- `Vídeo_1_-_landing_page_atualizado.mov` → **HeroSection** (vídeo da landing / topo)
+- `Vídeo_2-_langing_page_atualizado.mov` → **VSLSection** (VSL principal)
 
 ### Passos
+1. Fazer upload dos dois `.mov` para o CDN via `lovable-assets create`, gerando pointers em `src/assets/videos/hero-intro.mov.asset.json` e `src/assets/videos/vsl-main.mov.asset.json`.
+2. Em `src/components/landing/HeroSection.tsx`: remover o `<iframe>` do Google Drive e usar `<video controls playsInline preload="metadata">` apontando para a URL do CDN do vídeo 1.
+3. Em `src/components/landing/VSLSection.tsx`: mesma troca, usando a URL do CDN do vídeo 2.
+4. Manter os containers/aspect-ratio existentes para não quebrar o layout.
 
-1. **Upload ao CDN Lovable**
-   - Rodar `lovable-assets create` para cada um dos 3 vídeos direto de `/mnt/user-uploads/`.
-   - Salvar pointers em `src/assets/testimonials/{fabricio,cebola,marcel}.mov.asset.json`.
-
-2. **Atualizar `src/components/landing/VideoTestimonialsSection.tsx`**
-   - Reduzir grid de 4 → 3 colunas (`sm:grid-cols-2 lg:grid-cols-3`).
-   - Trocar array de placeholders pelos 3 depoimentos reais (nomes: Fabrício, Cebola, Marcel; role: "Aluno ProWall").
-   - Substituir bloco placeholder por tag `<video>` com `controls`, `playsInline`, `preload="metadata"`, mantendo `aspect-[9/16]`.
-   - Importar os 3 `.asset.json` e usar `asset.url` como `src`.
-
-3. **Validação**
-   - Conferir no preview que os 3 vídeos carregam e reproduzem em desktop e mobile, sem quebra de layout.
-
-### Observação
-Foram enviados 3 vídeos (o combinado eram 4). Se quiser adicionar o 4º depois, é só me enviar — mantenho o grid ajustável.
+### Observação técnica
+Arquivos `.mov` com codec H.264/AAC tocam nativamente em Safari/Chrome/Edge. Se algum navegador não reproduzir, converto depois para `.mp4` (mesmo codec, só remux).
